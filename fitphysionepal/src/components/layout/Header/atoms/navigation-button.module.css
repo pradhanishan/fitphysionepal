@@ -1,0 +1,20 @@
+.navigation-button,
+.active-navigation-button {
+  font-weight: bold;
+  margin-right: 1rem;
+  text-decoration: none;
+}
+
+.navigation-button {
+  color: var(--font-color-primary);
+}
+
+.active-navigation-button {
+  color: var(--font-color-accent);
+}
+
+.navigation-button:hover,
+.navigation-button:focus,
+.active-navigation-button:hover {
+  color: var(--font-color-secondary);
+}

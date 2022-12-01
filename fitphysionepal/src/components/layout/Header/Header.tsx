@@ -1,7 +1,37 @@
 import { FC } from "react";
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import { routeNavigation } from "../../../config/route-config";
+import NavigationButton from "./atoms/NavigationButton";
+import logo from "../../../assets/fitphysio.svg";
 
 const Header: FC = () => {
-  return <header>Hello from header</header>;
+  const navigationButtons = routeNavigation.map((r) => {
+    return <NavigationButton key={r.id} routeName={r.routeName} routeURL={r.routeURL} />;
+  });
+
+  return (
+    <header>
+      <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
+        <Container>
+          <Navbar.Brand>
+            <img src={logo} alt="logo" height={"100px"} />
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="me-auto">{navigationButtons}</Nav>
+            <Nav>
+              <Nav.Link href="#deets">More deets</Nav.Link>
+              <Nav.Link eventKey={2} href="#memes">
+                Dank memes
+              </Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+    </header>
+  );
 };
 
 export default Header;

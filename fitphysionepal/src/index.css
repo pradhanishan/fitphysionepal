@@ -10,6 +10,16 @@ html {
     "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /* background color variables */
+  --color-primary: #ffffff;
+  --color-secondary: #aa96da;
+  --color-tertiary: #a8d8ea;
+
+  /* font color variables */
+  --font-color-primary: #393e46;
+  --font-color-secondary: #b2b2b2;
+  --font-color-accent: #fc5185;
 }
 
 body {
