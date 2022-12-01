@@ -1,4 +1,3 @@
-import "./App.css";
 import classes from "./app.module.css";
 
 function App() {
