@@ -15,11 +15,13 @@ html {
   --color-primary: #ffffff;
   --color-secondary: #aa96da;
   --color-tertiary: #a8d8ea;
+  --color-dark: #2d4059;
 
   /* font color variables */
   --font-color-primary: #393e46;
   --font-color-secondary: #b2b2b2;
   --font-color-accent: #fc5185;
+  --font-color-light: #ffffff;
 }
 
 body {

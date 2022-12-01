@@ -1,5 +1,6 @@
 import classes from "./app.module.css";
-import Header from "./components/layout/Header/Header";
+import Header from "./components/layout/header/Header";
+import Footer from "./components/layout/footer/Footer";
 import HomePage from "./pages/HomePage";
 import { Route, Routes } from "react-router-dom";
 import ContactPage from "./pages/ContactPage";
@@ -12,14 +13,16 @@ function App() {
   return (
     <div className={classes.app}>
       <Header />
-      <main></main>
-      <Routes>
-        <Route path={router.home.routeURL} element={<HomePage />} />
-        <Route path={router.contact.routeURL} element={<ContactPage />} />
-        <Route path={router.about.routeURL} element={<AboutPage />} />
-        <Route path={router.services.routeURL} element={<ServicesPage />} />
-        <Route path={router.booking.routeURL} element={<BookAppointmentPage />} />
-      </Routes>
+      <main className={classes.main}>
+        <Routes>
+          <Route path={router.home.routeURL} element={<HomePage />} />
+          <Route path={router.contact.routeURL} element={<ContactPage />} />
+          <Route path={router.about.routeURL} element={<AboutPage />} />
+          <Route path={router.services.routeURL} element={<ServicesPage />} />
+          <Route path={router.booking.routeURL} element={<BookAppointmentPage />} />
+        </Routes>
+      </main>
+      <Footer />
     </div>
   );
 }

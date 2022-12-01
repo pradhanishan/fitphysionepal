@@ -4,7 +4,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { routeNavigation } from "../../../config/route-config";
 import NavigationButton from "./atoms/NavigationButton";
-import logo from "../../../assets/fitphysio.svg";
+import NavigationBrand from "./atoms/NavigationBrand";
 
 const Header: FC = () => {
   const navigationButtons = routeNavigation.map((r) => {
@@ -15,9 +15,7 @@ const Header: FC = () => {
     <header>
       <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
         <Container>
-          <Navbar.Brand>
-            <img src={logo} alt="logo" height={"100px"} />
-          </Navbar.Brand>
+          <NavigationBrand />
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">{navigationButtons}</Nav>

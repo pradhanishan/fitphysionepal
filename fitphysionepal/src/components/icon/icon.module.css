@@ -1,0 +1,9 @@
+.icon {
+  color: var(--font-color-accent);
+  font-weight: bold;
+}
+
+.icon:hover,
+.icon:focus {
+  filter: brightness(150%);
+}
