@@ -5,7 +5,6 @@ import Navbar from "react-bootstrap/Navbar";
 import { routeNavigation } from "../../../config/route-config";
 import NavigationButton from "./atoms/NavigationButton";
 import NavigationBrand from "./atoms/NavigationBrand";
-
 const Header: FC = () => {
   const navigationButtons = routeNavigation.map((r) => {
     return <NavigationButton key={r.id} routeName={r.routeName} routeURL={r.routeURL} />;
