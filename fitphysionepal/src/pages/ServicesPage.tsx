@@ -1,7 +1,12 @@
 import { FC } from "react";
+import ServiceCardContainer from "../components/services/ServiceCardContainer";
 
 const ServicesPage: FC = () => {
-  return <div>Services Page</div>;
+  return (
+    <div style={{ overflow: "hidden" }}>
+      <ServiceCardContainer />
+    </div>
+  );
 };
 
 export default ServicesPage;
