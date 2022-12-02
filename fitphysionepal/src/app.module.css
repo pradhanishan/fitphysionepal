@@ -1,11 +1,5 @@
-.app {
-  min-width: 100vw;
-  min-height: 100vh;
-}
-
 .main {
   min-height: 100vh;
-  padding: 1rem 0;
   text-align: center;
   color: var(--font-color-primary);
 }

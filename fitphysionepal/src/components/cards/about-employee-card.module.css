@@ -1,0 +1,13 @@
+.about-employee-card {
+  text-align: left;
+  border: none;
+}
+
+.employee-position {
+  font-style: italic;
+  color: var(--font-color-accent);
+}
+
+.about-employee-icons-container {
+  text-align: right;
+}

@@ -1,10 +1,13 @@
 import { FC } from "react";
 import ServiceCardContainer from "../components/services/ServiceCardContainer";
+import classes from "./service-page.module.css";
 
 const ServicesPage: FC = () => {
   return (
     <div style={{ overflow: "hidden" }}>
-      <ServiceCardContainer />
+      <div className={classes["service-card-container-wrapper"]}>
+        <ServiceCardContainer />
+      </div>
     </div>
   );
 };

@@ -13,7 +13,7 @@ interface IServiceCardProps {
 const ServiceCard: FC<IServiceCardProps> = (props: IServiceCardProps) => {
   const { image, title, text } = props;
   return (
-    <Card style={{ width: "18rem" }}>
+    <Card style={{ width: "18rem" }} className={classes["service-card"]}>
       <Card.Img variant="top" src={image} height="50%" />
       <Card.Body className={classes["service-card-body"]}>
         <Card.Title className={classes["service-card-title"]}>{title}</Card.Title>

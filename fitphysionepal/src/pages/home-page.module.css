@@ -1,0 +1,12 @@
+.about-card-container-wrapper {
+  background-color: var(--color-tertiary);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.about-employee-card-wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 3rem 0;
+}
