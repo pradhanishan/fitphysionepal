@@ -7,6 +7,12 @@
 .about-employee-card-wrapper {
   align-items: center;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   padding: 3rem 0;
+}
+
+.heading {
+  font-weight: bold;
+  margin-bottom: 2rem;
 }
