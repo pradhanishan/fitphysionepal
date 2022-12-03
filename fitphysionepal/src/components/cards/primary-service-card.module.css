@@ -13,4 +13,5 @@
 .primary-service-card-inner {
   border: 3px solid var(--color-tertiary);
   padding: 1rem;
+  height: 100%;
 }

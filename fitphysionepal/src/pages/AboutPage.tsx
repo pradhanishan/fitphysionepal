@@ -8,12 +8,12 @@ const AboutPage: FC = () => {
     <div className={classes.about}>
       <div className={classes["description-container"]}>
         <div className={classes["description-text-container"]}>
-          <h5>A team of blabla</h5>
+          <h5>a fitness facility</h5>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime quam eaque eius eos excepturi quis libero
-            nemo explicabo porro hic obcaecati illo alias pariatur quasi reprehenderit, ex neque voluptate mollitia ab
-            recusandae. Recusandae praesentium est voluptatibus aliquam corrupti eaque atque libero quasi vitae totam
-            quisquam nulla quis, dignissimos esse quaerat.
+            Our treatment plans are made just for you, taking into account your symptoms, medical history, and any
+            health restrictions you might have. We look forward to watching you achieve your fitness, health, and
+            recovery objectives. FitPhysio Clinic wants to encourage healthy living and fitness. Integrating
+            cutting-edge technology, science, and patient care, we strive to deliver services of the highest caliber.
           </p>
         </div>
         <div className={classes["description-image-container"]}>
