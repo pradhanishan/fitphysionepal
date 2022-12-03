@@ -4,3 +4,9 @@
   text-align: center;
   padding: 2rem;
 }
+
+.footer-link,
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--font-color-light);
+}
