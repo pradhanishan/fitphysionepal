@@ -18,9 +18,9 @@ const ServiceCard: FC<IServiceCardProps> = (props: IServiceCardProps) => {
       <Card.Body className={classes["service-card-body"]}>
         <Card.Title className={classes["service-card-title"]}>{title}</Card.Title>
         <Card.Text>{text.length > 150 ? `${text.substring(0, 147)}...` : text.length}</Card.Text>
-        <Button style={{ backgroundColor: "#fc5185", border: "none" }}>
+        {/* <Button style={{ backgroundColor: "#fc5185", border: "none" }}>
           read more <MdExpandMore />
-        </Button>
+        </Button> */}
       </Card.Body>
     </Card>
   );
