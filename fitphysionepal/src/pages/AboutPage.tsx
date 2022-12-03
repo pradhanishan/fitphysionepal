@@ -17,7 +17,7 @@ const AboutPage: FC = () => {
           </p>
         </div>
         <div className={classes["description-image-container"]}>
-          <img src={descriptionImage} height="250px" />
+          <img src={descriptionImage} height="250px" alt="description" />
         </div>
       </div>
       <div className={classes["about-card-container-wrapper"]}>

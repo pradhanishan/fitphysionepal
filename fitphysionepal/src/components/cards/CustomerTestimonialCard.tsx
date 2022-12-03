@@ -1,6 +1,5 @@
 import { FC } from "react";
 import classes from "./customer-testimonial-card.module.css";
-import DUMMY from "../../assets/images/customers/customer-one.jpg";
 
 interface ICustoemrTestimonialCardProps {
   image: any;

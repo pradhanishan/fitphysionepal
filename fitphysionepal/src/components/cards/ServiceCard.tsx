@@ -1,8 +1,6 @@
 import { FC } from "react";
 import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button";
 import classes from "./service-card.module.css";
-import { MdExpandMore } from "react-icons/md";
 
 interface IServiceCardProps {
   image: any;
