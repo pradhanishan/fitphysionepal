@@ -92,3 +92,27 @@ export const services: TServices = [
     image: pregnancyExerciseImage,
   },
 ];
+
+type TPrimaryServices = {
+  id: number;
+  title: string;
+  text: string;
+}[];
+
+export const primaryServices: TPrimaryServices = [
+  {
+    id: 0,
+    title: "physiotherapy",
+    text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. In exercitationem recusandae iure magnam cumque possimus incidunt, provident impedit ullam officiis tenetur sed pariatur ab dolorem obcaecati eos tempore, fuga repellendus!",
+  },
+  {
+    id: 1,
+    title: "weight loss",
+    text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. In exercitationem recusandae iure magnam cumque possimus incidunt, provident impedit ullam officiis tenetur sed pariatur ab dolorem obcaecati eos tempore, fuga repellendus!",
+  },
+  {
+    id: 2,
+    title: "postpartum care",
+    text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. In exercitationem recusandae iure magnam cumque possimus incidunt, provident impedit ullam officiis tenetur sed pariatur ab dolorem obcaecati eos tempore, fuga repellendus!",
+  },
+];
