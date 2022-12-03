@@ -1,0 +1,9 @@
+.timing-list-item-container {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.timings-span {
+  margin-right: 1rem;
+}

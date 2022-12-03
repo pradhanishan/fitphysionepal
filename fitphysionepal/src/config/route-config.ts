@@ -39,8 +39,8 @@ export const routeConfig: TRouteConfig = {
     routeURL: "/services",
   },
   booking: {
-    routeName: "booking",
-    routeURL: "/booking",
+    routeName: "appointment",
+    routeURL: "/appointment",
   },
 };
 
@@ -73,7 +73,7 @@ export const routeNavigation: TRouteNavigation = [
   },
   {
     id: 5,
-    routeName: "booking",
-    routeURL: "/booking",
+    routeName: "appointment",
+    routeURL: "/appointment",
   },
 ];

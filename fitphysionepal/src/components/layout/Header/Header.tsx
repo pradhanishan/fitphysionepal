@@ -6,9 +6,17 @@ import { routeNavigation } from "../../../config/route-config";
 import NavigationButton from "./atoms/NavigationButton";
 import NavigationBrand from "./atoms/NavigationBrand";
 const Header: FC = () => {
-  const navigationButtons = routeNavigation.map((r) => {
-    return <NavigationButton key={r.id} routeName={r.routeName} routeURL={r.routeURL} />;
-  });
+  const navigationButtons = routeNavigation
+    .filter((r) => r.routeName.toLowerCase() !== "appointment")
+    .map((r) => {
+      return <NavigationButton key={r.id} routeName={r.routeName} routeURL={r.routeURL} />;
+    });
+
+  const secondaryNavigationButton = routeNavigation
+    .filter((r) => r.routeName.toLowerCase() === "appointment")
+    .map((r) => {
+      return <NavigationButton key={r.id} routeName={r.routeName} routeURL={r.routeURL} />;
+    });
 
   return (
     <header>
@@ -18,12 +26,7 @@ const Header: FC = () => {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">{navigationButtons}</Nav>
-            <Nav>
-              <Nav.Link href="#deets">More deets</Nav.Link>
-              <Nav.Link eventKey={2} href="#memes">
-                Dank memes
-              </Nav.Link>
-            </Nav>
+            <Nav>{secondaryNavigationButton}</Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
