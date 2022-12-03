@@ -14,6 +14,7 @@ const BookAppointmentPage: FC = () => {
           <ListGroup.Item>or visit our clinic</ListGroup.Item>
         </ListGroup>
       </div>
+      <div className={classes["filler"]}></div>
       <div className={classes["appointment-child"]}>
         <h5>our timings</h5>
         <hr />

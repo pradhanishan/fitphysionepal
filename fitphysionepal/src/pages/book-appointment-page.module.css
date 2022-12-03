@@ -10,15 +10,19 @@
 .appointment-child {
   height: 350px;
   padding: 1rem;
-  margin-right: 1rem;
   background-color: var(--color-primary);
   box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+.filler {
+  width: 20px;
 }
 
 @media only screen and (max-width: 600px) {
   .appointment-page {
     flex-direction: column;
   }
+
   .appointment-child {
     margin-right: 0;
     margin-bottom: 1rem;

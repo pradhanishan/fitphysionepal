@@ -1,5 +1,5 @@
 import { FC } from "react";
-import ServiceCardContainer from "../components/services/ServiceCardContainer";
+import ServiceCardContainer from "../components/containers/ServiceCardContainer";
 import classes from "./service-page.module.css";
 
 const ServicesPage: FC = () => {
